@@ -26,6 +26,14 @@
     </header>
 
     <div class="container" id="app">
+      <design-quote></design-quote>
+    </div>
+
+    <footer class="footer">
+      <footer-content></footer-content>
+    </footer>
+
+    <template id="design-quote-template">
       <div class="jumbotron">
         <div class="row">
           <loading v-show="!quote"></loading>
@@ -45,31 +53,25 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <footer class="footer">
-      <footer-content></footer-content>
-    </footer>
+    </template>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.min.js"></script>
     <script src="https://vuejs.mikesprague.me/shared/js/components.js"></script>
     <script>
-      var footer = new Vue({
-        el: ".footer"
-      });
-
-      var app = new Vue({
-        el: "#app",
-        data: {
-          quote: "",
-          author: "",
-          quoteMarkup: "",
-          authorMarkup: "",
-          source: "",
-          url: "",
-          apiUrl: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&",
-          tweetUrlPrefix: "https://twitter.com/intent/tweet?text="
+      Vue.component( "design-quote", {
+        template: "#design-quote-template",
+        data: function() {
+          return {
+            quote: "",
+            author: "",
+            quoteMarkup: "",
+            authorMarkup: "",
+            source: "",
+            url: "",
+            apiUrl: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&",
+            tweetUrlPrefix: "https://twitter.com/intent/tweet?text="
+          }
         },
         created: function() {
           this.getQuote();
@@ -105,8 +107,8 @@
             var pattern1 = /<p>/gi;
             var pattern2 = /<\/p>/gi;
             var quoteText = this.quote.replace( pattern1, "" ).replace( pattern2, "" );
-            if ( quoteText.length >= 100 ) {
-              quoteText = quoteText.substring( 0, 98 ) + "...";
+            if ( quoteText.length >= 96 ) {
+              quoteText = quoteText.substring( 0, 95 ) + "...";
             }
             quoteText = this.decodeHtmlEntities( '"' + quoteText.trim() + '"' );
             quoteAuthor = this.decodeHtmlEntities( this.author );
@@ -125,6 +127,14 @@
             this.source = "";
           }
         }
+      });
+
+      var app = new Vue({
+        el: "#app"
+      });
+
+      var footer = new Vue({
+        el: ".footer"
       });
     </script>
   </body>
