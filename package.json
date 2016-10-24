@@ -1,0 +1,24 @@
+{
+  "name": "design-quotes",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": {
+    "url": "git@github.com:mikesprague/vuejs-design-quotes.git",
+    "type": "git"
+  },
+  "author": "Mike Sprague <mikesprague@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "vue": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "browserify-hmr": "^0.3.5",
+    "vueify": "^9.2.4",
+    "watchify": "^3.7.0"
+  }
+}
