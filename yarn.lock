@@ -817,8 +817,8 @@ callsite@1.0.0:
   resolved "https://registry.yarnpkg.com/callsite/-/callsite-1.0.0.tgz#280398e5d664bd74038b6f0905153e6e8af1bc20"
 
 caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000578:
-  version "1.0.30000595"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000595.tgz#952e756cda62cd4f563c871cc6401d131bde4186"
+  version "1.0.30000596"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000596.tgz#ff7690aecf87d6e79a3ca6ae18580de52fdd031e"
 
 caseless@~0.11.0:
   version "0.11.0"
