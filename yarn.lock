@@ -817,8 +817,8 @@ callsite@1.0.0:
   resolved "https://registry.yarnpkg.com/callsite/-/callsite-1.0.0.tgz#280398e5d664bd74038b6f0905153e6e8af1bc20"
 
 caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000597:
-  version "1.0.30000600"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000600.tgz#2d0892f77eebb399c3c17b3ecb72da7b8740f31f"
+  version "1.0.30000601"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000601.tgz#073c9d1c62edb399ecc783a7ab40698b5694d2fe"
 
 caseless@~0.11.0:
   version "0.11.0"
@@ -2329,8 +2329,8 @@ postcss-minify-gradients@^1.0.1:
     postcss-value-parser "^3.3.0"
 
 postcss-minify-params@^1.0.4:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-minify-params/-/postcss-minify-params-1.1.0.tgz#b6093472b5872a6deda47aa3b0b5b8b973547c50"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/postcss-minify-params/-/postcss-minify-params-1.2.0.tgz#c2b1968c43173455d3956f138a95d5bda77c4ae7"
   dependencies:
     alphanum-sort "^1.0.1"
     postcss "^5.0.2"
